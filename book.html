@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>線上預約｜汪汪行動美容車</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 回首頁</a>
+  <h1>線上預約</h1>
+  <div class="card">
+    <label for="name">飼主姓名</label><input id="name">
+    <label for="dog">狗狗名字</label><input id="dog">
+    <label for="date">想預約的日期</label><input id="date" type="date">
+    <button onclick="sendBooking()">送出預約</button>
+    <div class="result" id="msg">填好之後按「送出預約」</div>
+  </div>
+  <p class="note">示範用，不會真的送出任何資料。</p>
+</div>
+<script>
+function sendBookin(){
+  const name = document.getElementById("name").value || "（沒填）";
+  const dog = document.getElementById("dog").value || "（沒填）";
+  const date = document.getElementById("date").value || "（沒選）";
+  document.getElementById("msg").textContent = "預約成功！" + name + " 的 " + dog + "，日期 " + date + "，我們會再打電話確認。";
+}
+</script>
+</body>
+</html>

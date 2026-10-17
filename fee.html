@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美容＋車馬費試算｜汪汪行動美容車</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← 回首頁</a>
+  <h1>美容＋車馬費試算</h1>
+  <div class="card">
+    <p class="note">美容價：小型犬 800、中型犬 1200、大型犬 1600 元。<br>車馬費：<b>5 公里內免費</b>，超過的部分每公里 30 元。</p>
+    <label for="size">狗狗體型</label>
+    <select id="size">
+      <option value="800">小型犬</option>
+      <option value="1200">中型犬</option>
+      <option value="1600">大型犬</option>
+    </select>
+    <label for="km">你家離本店幾公里</label>
+    <input id="km" type="number" min="0" value="3">
+    <button onclick="calc()">計算</button>
+    <div class="result" id="out">選好之後按「計算」</div>
+  </div>
+</div>
+<script>
+function calc(){
+  const base = Number(document.getElementById("size").value);
+  const km = Number(document.getElementById("km").value);
+  const fee = km * 30;
+  document.getElementById("out").textContent = "美容 " + base + " 元＋車馬費 " + fee + " 元＝總共 " + (base + fee) + " 元";
+}
+</script>
+</body>
+</html>

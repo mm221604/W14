@@ -1,0 +1,10 @@
+body{margin:0;background:#f2f8fb;color:#1f3340;font-family:"Microsoft JhengHei","PingFang TC",sans-serif;line-height:1.7}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px}
+h1{color:#1d6f96;margin:0 0 8px}
+.card{background:#fff;border:1px solid #cfe4ef;border-radius:14px;padding:20px;margin:14px 0}
+.btn,button{display:block;width:100%;box-sizing:border-box;margin:10px 0;padding:12px;border:0;border-radius:10px;background:#2b8cbf;color:#fff;font:inherit;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}
+label{display:block;margin:10px 0 4px;font-weight:700}
+input,select{width:100%;box-sizing:border-box;padding:10px;border:1px solid #cfe4ef;border-radius:8px;font:inherit}
+.back{display:inline-block;margin-bottom:8px;color:#1d6f96}
+.result{background:#e6f3fa;border-radius:10px;padding:14px;margin-top:12px;font-size:1.1rem}
+.note{color:#5d7480;font-size:.9rem}
